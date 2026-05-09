@@ -1,42 +1,40 @@
-# ai-dev-exp-template
+# Day073 — 買い物袋かたより直し
 
-Vite-based single-page template for `ai-dev-day-XXX` repositories.
+> 買い物袋の重さ偏りを直すツールです。
+>
+> Complexity Tier: small
+>
+> Selected Components: none
+>
+> Family / Mechanic: market_bag_balance / sort_baskets
+>
+> Input -> Output: basket_items -> load_split
+>
+> Audience Promise: レジ台で詰め直す回数を減らせる。
 
-## Required meta.json fields
+## 使い方
 
-- `day` (e.g. `Day001`)
-- `title`
-- `description`
-- `genre`
-- `theme`
-- `story_summary`
+このツールでできること
+買い物袋の重さ偏りを直すツールです。
 
-## Theme behavior
+こんな時に使います
+会計後に袋へ詰める前、重さが偏りそうな時に使います。
 
-- `src/themes.js` defines 8 visual themes.
-- Runtime applies `meta.json.theme` using CSS variables.
-- Day repos should set `theme` with a day-seeded deterministic selector.
+使い方
+1. 項目を入れる
+2. 追加や編集をする
+3. 結果を見る
 
-## Component Packs (tiered build)
+## Story
 
-- Template reads `complexity_tier` / `selected_components` from `meta.json`.
-- `selected_components` is missing: runs as small tier baseline with all packs OFF.
-- Unknown component names are ignored safely.
-- Each pack can be toggled independently and app core flow still works.
+- [制作ストーリー](./STORY.md)
+- Complexity hint: Implement the locked brief with one clear hero interaction and keep the main screenshot readable.
+- Publish hook: 買った物の重さと壊れやすさを入れると、袋ごとの重さ差と避ける組み合わせが見える。
 
-Supported packs:
+## Demo
 
-- `reason_panel`
-- `sample_inputs`
-- `local_storage`
-- `comparison_view`
-- `history_panel`
-- `export_suite`
-- `step_ui`
+🌐 [GitHub Pages](https://ryo909.github.io/ai-dev-day-073/)
 
-### Quality/Fallback integration
+---
 
-- Every pack root includes `data-quality-marker="<pack_name>"` for evaluator detection.
-- Runtime manifest is published to `window.__COMPONENT_PACKS__` and script node `#componentPackManifest`.
-- Static fallback manifest exists at `public/component-pack-manifest.json`.
-- Medium/Large can increase visual depth safely by selecting more packs without changing core logic.
+Day073 / #100日開発

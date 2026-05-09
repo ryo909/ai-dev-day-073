@@ -1,0 +1,11 @@
+{
+  "title": "買い物袋かたより直し",
+  "archetype": "sort_baskets",
+  "interaction_model": "assign_garments_to_baskets",
+  "primary_layout": "garment_controls_with_split_baskets",
+  "result_presentation_style": "today_later_handwash_baskets",
+  "palette_motif": "ランドリーミント",
+  "main_cta": "洗濯物で試す",
+  "intro_variant": "laundry_sort",
+  "ui_variant": "laundry"
+}
