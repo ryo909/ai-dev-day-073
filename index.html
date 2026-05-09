@@ -45,11 +45,11 @@
   .first-view__grid{grid-template-columns:1fr}
 }
 </style><link rel="stylesheet" href="/src/style.css"></head>
-<body><div id="app" data-ui-variant="laundry" data-primary-layout="garment_controls_with_split_baskets"><section class="first-view first-view--laundry" data-ready-role="first-view">
+<body><div id="app" data-ui-variant="market" data-primary-layout="item_weight_editor_with_two_bag_result"><section class="first-view first-view--market" data-ready-role="first-view">
   <div class="first-view__top">
     <div>
       <div class="mini-label">Day073</div>
-      <p class="first-view__eyebrow">ランドリーミント</p>
+      <p class="first-view__eyebrow">買い物袋グリーン</p>
     </div>
     <a class="intro-link" href="https://github.com/ryo909/ai-dev-day-073" target="_blank" rel="noopener">GitHub</a>
   </div>
@@ -66,7 +66,7 @@
     </article>
     <article class="fv-block fv-block--start" data-ready-role="start-block">
       <p class="fv-kicker">最初にやること</p>
-      <h2>服をかごへ分ける</h2>
+      <h2>品物と重さを足す</h2>
       <dl class="fv-pair">
         <dt>入力 / 操作</dt>
         <dd>買い物カゴ</dd>
@@ -76,7 +76,7 @@
         <dd>牛乳 220円 洗剤 680円 お菓子 350円</dd>
       </dl>
       <p class="fv-helper">品物と袋数を入れると、配分が出ます。</p>
-      <button id="sampleFillBtn" data-ready-role="primary-cta" class="primary-intro-btn" style="background:linear-gradient(135deg,var(--fv-accent),var(--fv-accent-2))">洗濯物で試す</button>
+      <button id="sampleFillBtn" data-ready-role="primary-cta" class="primary-intro-btn" style="background:linear-gradient(135deg,var(--fv-accent),var(--fv-accent-2))">帰り道の買い物で試す</button>
       <p class="fv-inline-note">初見なら「例で試す」から始めると、そのまま結果見本まで確認できます。</p>
     </article>
     <article class="fv-block fv-block--preview" data-ready-role="output-preview">
@@ -90,4 +90,4 @@
       </div>
     </article>
   </div>
-</section><section class="brief-canvas brief-canvas--laundry"><div id="briefCanvas"></div></section></div><script type="module" src="/src/main.js"></script></body></html>
+</section><section class="brief-canvas brief-canvas--market"><div id="briefCanvas"></div></section></div><script type="module" src="/src/main.js"></script></body></html>

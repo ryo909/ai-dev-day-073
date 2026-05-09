@@ -1,11 +1,11 @@
 {
   "title": "買い物袋かたより直し",
   "archetype": "sort_baskets",
-  "interaction_model": "assign_garments_to_baskets",
-  "primary_layout": "garment_controls_with_split_baskets",
-  "result_presentation_style": "today_later_handwash_baskets",
-  "palette_motif": "ランドリーミント",
-  "main_cta": "洗濯物で試す",
-  "intro_variant": "laundry_sort",
-  "ui_variant": "laundry"
+  "interaction_model": "editable_items_to_balanced_bags",
+  "primary_layout": "item_weight_editor_with_two_bag_result",
+  "result_presentation_style": "bag_weight_bars_and_fragile_top_list",
+  "palette_motif": "買い物袋グリーン",
+  "main_cta": "帰り道の買い物で試す",
+  "intro_variant": "market_bag_balance",
+  "ui_variant": "market"
 }
